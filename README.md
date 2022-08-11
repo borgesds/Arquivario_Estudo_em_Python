@@ -3,4 +3,4 @@
 - Relembrar métodos
 - Estudos aleatórios
 - Testes
-- Arquivos pontuais
+- Arquivos pontuais para ministrar o curso de Python
