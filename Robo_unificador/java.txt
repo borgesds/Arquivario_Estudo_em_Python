@@ -1,0 +1,89 @@
+package Projetos;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class NumerodeLado {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String arquivoCSV = "C:\\Users\\andre.borges\\Downloads\\TRANSPOR_V_H\\Daverticalprahorizontal.csv";
+		BufferedReader br = null;
+		String linha = "";
+		String csvDivisor = ";";
+
+		try {
+
+			br = new BufferedReader(new FileReader(arquivoCSV));
+			br.readLine();
+
+			Map<String, String> mapTelCpf = new HashMap<String, String>();
+
+			
+			while ((linha = br.readLine()) != null) {
+
+				String[] arrayLinha = linha.split(csvDivisor);
+				String cpf = arrayLinha[0];
+				String telefone = arrayLinha[1];
+
+				if (!mapTelCpf.containsKey(cpf)) {
+
+					mapTelCpf.put(cpf, telefone);
+
+				} else {
+
+					mapTelCpf.put(cpf, mapTelCpf.get(cpf) + ";" + telefone);
+
+				}
+
+			}
+
+			File csvSaida = new File("C:\\Users\\andre.borges\\Downloads\\TRANSPOR_V_H\\arquivo_final.csv");
+
+			for (String cpf : mapTelCpf.keySet()) {
+
+				geraLogCsv(csvSaida, cpf + ";" + mapTelCpf.get(cpf), false);
+				
+				System.out.println("VRUUUUMMMMMMM");
+			}
+
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
+
+		System.out.println("Finish!!");
+	}
+
+	public static void geraLogCsv(File fileCsv, String str ,Boolean teste) {
+
+		if (!fileCsv.exists()) {
+			try {
+				fileCsv.createNewFile();
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+		}
+
+		try {
+			FileWriter fw = new FileWriter(fileCsv, true);
+			BufferedWriter bw = new BufferedWriter(fw);
+			bw.write(str);
+			bw.newLine();
+			bw.close();
+			fw.close();
+
+		} catch (IOException ex) {
+			ex.printStackTrace();
+
+		}
+	}
+
+}
