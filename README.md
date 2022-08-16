@@ -1,4 +1,4 @@
-# 🗃 REPOSITÓRIO PARA ARQUIVOS DE ESTUDO 🗃
+# 🗃 REPOSITÓRIO PARA ARQUIVOS E MATERIAL DE ESTUDO 🗃
 
 - 🤓 Relembrar métodos 🤓
 - 🧑🏻‍💻 Estudos aleatórios 🧑🏻‍💻
