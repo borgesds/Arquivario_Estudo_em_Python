@@ -15,3 +15,7 @@
 > - 3.0 - Transpor dados da vertical para horizontal
 > - 3.1 - Juntar as bases divididas com os dados transpostos
 > - 4.0 - Juntar todos os dados em um unico arquivo
+
+## 🗃 2.0 - Arquivos para ministrar aulas de Python 🗃
+> - 1.0 - Básico
+> - 2.0 - Intermediário
