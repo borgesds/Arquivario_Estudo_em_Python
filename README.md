@@ -17,5 +17,7 @@
 > - 4.0 - Juntar todos os dados em um unico arquivo
 
 ## 🗃 2.0 - Arquivos para ministrar aulas de Python 🗃
+
+### Aulas tipo 🧑🏻‍🏫
 > - 1.0 - Básico
 > - 2.0 - Intermediário
