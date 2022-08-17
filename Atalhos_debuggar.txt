@@ -1,0 +1,4 @@
+# F5 começa a depuggar seu código
+# F10 analisa linha sem entrar noo código interno
+# F11 analisa linha e entra no código interno
+# SHIFT + F11 sair do bloco de código atual e continuar a execução
