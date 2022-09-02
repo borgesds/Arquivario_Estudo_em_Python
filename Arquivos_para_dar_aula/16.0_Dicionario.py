@@ -78,3 +78,26 @@ for cv1, cv2 in dz.items():
     print(cv1, cv2)
 
 
+# Dicionario de clientes      <====
+clientes = {
+    'cliente1': {
+        'nome': 'Luiz',
+        'sobrenome': 'Carlos'
+    },
+    'cliente2': {
+        'nome': 'Arthur',
+        'sobrenome': 'Campolina'
+    },
+    'cliente3': {
+        'nome': 'Madalena',
+        'sobrenome': 'Fonseca'
+    },
+}
+
+# o cliente_k vai pegar as chaves(cliente1, cliente2)
+# o cliente_v vai pegar as valores tudo junto
+for clientes_k, clientes_v in clientes.items():
+    print(f'Exibindo {clientes_k}')
+    # vai retornar os valores chave e valo dentro de clientes
+    for chaves_k, valores_k in clientes_v.items():
+        print(f'\t{chaves_k} = {valores_k}')
