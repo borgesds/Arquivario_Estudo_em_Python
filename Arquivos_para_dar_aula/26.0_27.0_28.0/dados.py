@@ -14,9 +14,9 @@ produtos = [
 pessoas = [
     {'nome': 'Carlos', 'idade': 31},
     {'nome': 'Paulo', 'idade': 39},
-    {'nome': 'Paula', 'idade': 39},
+    {'nome': 'Paula', 'idade': 17},
     {'nome': 'Silvana', 'idade': 55},
-    {'nome': 'Carla', 'idade': 24},
+    {'nome': 'Carla', 'idade': 15},
     {'nome': 'Naldo', 'idade': 45},
     {'nome': 'Mada', 'idade': 73},
     {'nome': 'André', 'idade': 31},
