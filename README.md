@@ -21,3 +21,10 @@
 ### Aulas tipo 🧑🏻‍🏫
 > - 1.0 - Básico
 > - 2.0 - Intermediário
+
+
+## 🗃 3.0 - Estudos com Python 🗃
+
+### Geradores de CPF e CNPJ 🧑🏻‍💻
+> - 1.0 - Valida a quantidade de números gerados
+> - 2.0 - Gera aleatório números
