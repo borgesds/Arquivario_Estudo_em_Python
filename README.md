@@ -9,7 +9,7 @@
 ## 🗃 1.0 - Robô unificador 🗃
 
 ### Fluxo 💻
-> - 1.0 - Cria uma unic abase
+> - 1.0 - Cria uma unica base
 > - 2.0 - Separar as lojas  por suas categorias
 > - 2.1 - Separar Duas colunas exclusivas
 > - 3.0 - Transpor dados da vertical para horizontal
