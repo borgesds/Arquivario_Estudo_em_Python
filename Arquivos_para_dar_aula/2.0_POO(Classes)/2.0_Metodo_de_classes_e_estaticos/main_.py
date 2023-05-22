@@ -22,7 +22,7 @@ class Pessoa:
     # Ele não usa a classe cls e nem a instância self
     @staticmethod
     def gerar_id():
-        rand = randint(10000, 19999)
+        rand = randint(10000, 59999)
         return rand
 
 
