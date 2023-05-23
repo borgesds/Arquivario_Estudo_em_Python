@@ -3,7 +3,7 @@ class Cliente:
         self.nome = nome
         self.idade = idade
         self.enderecos = []
-  
+
     def insere_endereco(self, cidade, estado):
         self.enderecos.append(Endereco(cidade, estado))
 
