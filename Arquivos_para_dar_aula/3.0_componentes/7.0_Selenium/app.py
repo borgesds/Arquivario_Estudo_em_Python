@@ -8,13 +8,20 @@ from selenium import webdriver
 from time import sleep
 
 
-class ChromeAuto:
+class CookieClicker:
     def __init__(self):
-        self.driver_path = 'chromedriver'
-        self.options = webdriver.ChromeOptions()
-        self.options.add_argument('user-data-dir=Perfil')
-        self.chrome = webdriver.Chrome(self.driver_path, options=self.options)
+        self.SITE_LINK = 'https://www.google.com.br/'
+        options = webdriver.ChromeOptions()
+        options.add_argument('user-data-dir=Perfil')
+        self.drive = webdriver.Chrome(options=options)
+        self.drive.maximize_window()
+
+    def abrir_site(self):
+        sleep(2)
+        self.drive.get(self.SITE_LINK)
+        sleep(10)
 
 
 if __name__ == '__main__':
-    chrome = ChromeAuto()
+    teste = CookieClicker()
+    teste.abrir_site()
