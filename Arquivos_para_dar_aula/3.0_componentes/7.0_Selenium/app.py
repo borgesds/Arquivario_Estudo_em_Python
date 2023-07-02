@@ -35,6 +35,28 @@ class ChromeAuto:
     def sair(self):
         self.chrome.quit()
 
+    def clica_perfil(self):
+        try:
+            # Dentro do método clica_perfil
+            sleep(3)
+            wait = WebDriverWait(self.chrome, 10)
+
+            perfil = wait.until(EC.element_to_be_clickable((By.XPATH, '//button[@aria-label="Open user account menu"]')))
+            perfil.click()
+        except Exception as e:
+            print('Erro ao clica perfil:', e)
+
+    # =======>>>>>>>>
+    def faz_logout(self):
+        try:
+            sleep(3)
+            wait = WebDriverWait(self.chrome, 10)
+
+            sign_out_button = wait.until(EC.element_to_be_clickable((By.XPATH, '//span[text()="Sign out"]')))
+            sign_out_button.click()
+        except Exception as e:
+            print('Erro ao clica em logout:', e)
+
     def fazer_login(self):
         try:
             # Definindo o tempo máximo de espera em segundos
@@ -51,7 +73,7 @@ class ChromeAuto:
                                    )))
 
             input_login.send_keys('borges.an@hotmail.com')
-            input_password.send_keys('xxxxxxxxxxx')
+            input_password.send_keys('xxxxxxxx')
             sleep(3)
             btn_login.click()
         except Exception as e:
@@ -62,8 +84,11 @@ if __name__ == '__main__':
     chrome = ChromeAuto()
     chrome.acessa('https://github.com/')
 
+    chrome.clica_perfil()
+    chrome.faz_logout()
+
     chrome.clica_sing_in()
     chrome.fazer_login()
 
-    sleep(30)
+    sleep(60)
     chrome.sair()
